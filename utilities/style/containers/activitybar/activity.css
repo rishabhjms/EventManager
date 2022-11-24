@@ -1,0 +1,13 @@
+#activityBar {
+  grid-template-columns: 2fr 7fr;
+  transition: 0.8s ease all;
+}
+#activityBar > div:first-child {
+  grid-template-rows: 1.5fr 10fr;
+}
+#activityBar > div:last-child {
+  grid-template-rows: 2fr 10fr;
+}
+#activityBar > div:last-child > div:first-child {
+  grid-template-columns: 1fr 8fr 2.5fr 2fr;
+}/*# sourceMappingURL=activity.css.map */

@@ -1,0 +1,14 @@
+#activityBar {
+    grid-template-columns: 2fr 7fr;
+    transition: .8s ease all;
+
+    &>div:first-child {
+        grid-template-rows: 1.5fr 10fr;
+    }
+    &>div:last-child{
+        grid-template-rows: 2fr 10fr;
+        &>div:first-child{
+            grid-template-columns: 1fr 8fr 2.5fr 2fr;
+        }
+    }
+}

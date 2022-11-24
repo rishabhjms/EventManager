@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +9,49 @@
     <link rel="stylesheet" href="utilities/style/theme/theme.css">
     <link rel="stylesheet" href="utilities/style/containers/titlebar/titlebar.css">
     <link rel="stylesheet" href="utilities/style/default/default.css">
+    <link rel="stylesheet" href="utilities/style/containers/activitybar/activity.css">
     <title>Event Manager - Elon</title>
 </head>
+
 <body>
     <div id="titleBar" class="title_bar grid grid-flow-col">
         <section class="grid place-content-center h-full">
             <img src="utilities/graphics/assets/menu.png" alt="">
         </section>
         <section class="grid items-center">
-            <span class="font-semibold text-xl uppercase select-none cursor-text" id="eventHeading" contenteditable="true">Your heading goes here</span>
+            <span class="font-semibold text-xl uppercase select-none cursor-text" id="eventHeading">Your heading goes
+                here</span>
         </section>
         <section class="grid place-content-center">
-            <img src="utilities/graphics/assets/add.png" alt="">
+            <!-- <img src="utilities/graphics/assets/add.png" alt=""> -->
         </section>
+    </div>
+    <div id="activityBar" class="activity_bar grid">
+        <div class="activity_left grid">
+            <div class="row_up grid grid-flow-col items-center">
+                <span class="grid place-content-center py-2 rounded-lg"><img src="utilities//graphics/assets/wizard.png"
+                        alt="" width="24"></span>
+                <input type="text" placeholder="Add Day" class="rounded-lg px-2 py-1 outline-none" id="inp_adder_1">
+                <span class="grid place-content-center"><img src="utilities/graphics/assets/tick.png" alt=""
+                        width="20"></span>
+            </div>
+            <div class="row_down">
+
+            </div>
+        </div>
+        <div class="activity_right grid grid-flow-col">
+            <div class="row_up grid grid-flow-col items-center w-11/12">
+                <span class="justify-self-center border-2 w-[1rem] rounded-full h-[1rem]"></span>
+                <input type="text" id="inp_adder_2" placeholder="Add Task" class="rounded-lg px-2 py-2 outline-none w-11/12 justify-self-center" spellcheck="false">
+                <input type="date">
+                <input type="time">
+            </div>
+            <div class="row_down"></div>
+        </div>
     </div>
 </body>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="utilities/src/app/title.js"></script>
+<script src="utilities/src/app/activity.js"></script>
+
 </html>
