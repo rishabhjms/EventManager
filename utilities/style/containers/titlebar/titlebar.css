@@ -1,0 +1,9 @@
+#titleBar {
+  grid-template-columns: 3fr 15fr 3fr;
+}
+#titleBar > section:first-child > img {
+  height: 2rem;
+}
+#titleBar > section:last-child > img {
+  height: 2rem;
+}/*# sourceMappingURL=titlebar.css.map */

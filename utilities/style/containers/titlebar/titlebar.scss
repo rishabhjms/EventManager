@@ -1,0 +1,13 @@
+#titleBar{
+    grid-template-columns: 3fr 15fr 3fr;
+    &>section:first-child{
+        &>img{
+            height: 2rem;
+        }
+    }
+    &>section:last-child{
+        &>img{
+            height: 2rem;
+        }
+    }
+}

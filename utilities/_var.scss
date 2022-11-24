@@ -1,0 +1,15 @@
+$russian-violet: #320e3bff;
+$spanish-violet: #4c2a85ff;
+$glaucous: #6b7fd7ff;
+$blizzard-blue: #bcedf6ff;
+$nyanza: #ddfbd2ff;
+@mixin setBG($bg-color) {
+    background-color: $bg-color;
+}
+
+@mixin setTextColor($text-color) {
+    color: $text-color;
+}
+@mixin setBorderNeon{
+    border: 2px solid $neon;
+}

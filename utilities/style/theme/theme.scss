@@ -1,0 +1,4 @@
+@import "../../var";
+.title_bar{
+    @include setBG($nyanza);
+}
