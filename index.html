@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="utilities/style/containers/titlebar/titlebar.css">
     <link rel="stylesheet" href="utilities/style/default/default.css">
     <link rel="stylesheet" href="utilities/style/containers/activitybar/activity.css">
+    <script src="https://kit.fontawesome.com/a62dfa2412.js" crossorigin="anonymous"></script>
     <title>Event Manager - Elon</title>
 </head>
 
@@ -31,18 +32,33 @@
             <div class="row_up grid grid-flow-col items-center">
                 <span class="grid place-content-center py-2 rounded-lg"><img src="utilities//graphics/assets/wizard.png"
                         alt="" width="24"></span>
-                <input type="text" placeholder="Add Day" class="rounded-lg px-2 py-1 outline-none" id="inp_adder_1">
+                <input type="text" placeholder="Enter day title" class="rounded-lg px-2 py-1 outline-none"
+                    id="inp_adder_1">
                 <span class="grid place-content-center"><img src="utilities/graphics/assets/tick.png" alt=""
                         width="20"></span>
             </div>
-            <div class="row_down">
-
+            <div class="absolute mt-16 invisible" id="type_chooser">
+                <ul class="grid grid-rows-3 w-full items-center">
+                    <li class="space-x-3"> <img src="utilities/graphics/assets/sunny.png" alt="" width="24">
+                        <span>Day</span>
+                    </li>
+                    <li class="space-x-3">
+                        <img src="utilities/graphics/assets/calendar.png" alt="" width="24"><span>Event</span>
+                    </li>
+                    <li class="space-x-3">
+                        <img src="utilities/graphics/assets/reminder.png" alt="" width="24">
+                        <span>Reminder</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="row_down grid space-y-2 overflow-y-scroll max-h-[70vh]">
             </div>
         </div>
         <div class="activity_right grid grid-flow-col">
             <div class="row_up grid grid-flow-col items-center w-11/12">
                 <span class="justify-self-center border-2 w-[1rem] rounded-full h-[1rem]"></span>
-                <input type="text" id="inp_adder_2" placeholder="Add Task" class="rounded-lg px-2 py-2 outline-none w-11/12 justify-self-center" spellcheck="false">
+                <input type="text" id="inp_adder_2" placeholder="Add Task"
+                    class="rounded-lg px-2 py-2 outline-none w-11/12 justify-self-center" spellcheck="false">
                 <input type="date">
                 <input type="time">
             </div>

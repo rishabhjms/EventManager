@@ -4,4 +4,11 @@
 
 .activity_bar {
   height: 85vh;
+}
+.activity_bar > div:first-child > div:nth-child(2) {
+  height: 20vh;
+  width: 20vw;
+}
+.activity_bar > div:first-child > div:nth-child(2) > ul {
+  height: 100%;
 }/*# sourceMappingURL=area.css.map */

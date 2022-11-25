@@ -4,7 +4,23 @@
 
     &>div:first-child {
         grid-template-rows: 1.5fr 10fr;
+        &>div:nth-child(2){
+            transition: .3s ease;
+            &>ul>li{
+                display: flex;
+                margin-left: 1rem/* 16px */;
+                margin-right: 1rem/* 16px */; 
+                cursor: pointer;
+            }
+        }
+        &>div:last-child{
+            grid-template-rows: repeat(13,1fr);
+            &>div{
+                
+            }
+        }
     }
+    
     &>div:last-child{
         grid-template-rows: 2fr 10fr;
         &>div:first-child{

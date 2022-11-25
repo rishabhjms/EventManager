@@ -1,15 +1,29 @@
 @import "../../var";
-.title_bar{
+
+.title_bar {
     @include setBG($nyanza);
 }
-#activityBar{
-    &>div:first-child{
-        @include setBG($nyanza);    
+
+#activityBar {
+    &>div:first-child {
+        @include setBG($nyanza);
+
+        &>div:nth-child(2) {
+            @include setBG(#fff);
+
+            // &>ul>li{
+            // }
+        }
+        &>div:last-child>div {
+            @include setBG(#fff);
+        }
     }
-    &>div:last-child>div:first-child>span{
+
+    &>div:last-child>div:first-child>span {
         border: 2px solid $russian-violet;
     }
-    #inp_adder_2{
+
+    #inp_adder_2 {
         @include setBG($nyanza);
     }
 }

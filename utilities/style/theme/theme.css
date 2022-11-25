@@ -5,6 +5,12 @@
 #activityBar > div:first-child {
   background-color: #ddfbd2;
 }
+#activityBar > div:first-child > div:nth-child(2) {
+  background-color: #fff;
+}
+#activityBar > div:first-child > div:last-child > div {
+  background-color: #fff;
+}
 #activityBar > div:last-child > div:first-child > span {
   border: 2px solid #320e3b;
 }
