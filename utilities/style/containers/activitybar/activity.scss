@@ -4,6 +4,10 @@
 
     &>div:first-child {
         grid-template-rows: 1.5fr 10fr;
+        transition: 2s ease-in all;
+        &>div:first-child{
+            grid-template-columns: 2fr 7fr 2fr;
+        }
         &>div:nth-child(2){
             transition: .3s ease;
             &>ul>li{

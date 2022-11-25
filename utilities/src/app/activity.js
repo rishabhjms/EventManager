@@ -2,16 +2,21 @@ let menu = document.getElementById('titleBar').firstElementChild.firstElementChi
 let ac_bar = document.getElementById('activityBar');
 let isSideBarHidden = false;
 let type_chooser = document.getElementById('type_chooser');
-
+let content = ac_bar.firstElementChild.innerHTML;
 menu.addEventListener('click', function () {
     if (!isSideBarHidden) {
+        ac_bar.firstElementChild.innerHTML = ' ';
         ac_bar.firstElementChild.setAttribute('style', 'display:none;')
         ac_bar.style.gridTemplateColumns = '1fr';
+        // ac_bar.firstElementChild.setAttribute('style','grid-template-rows: 1.5fr 10fr');
         isSideBarHidden = true;
     }
     else if (isSideBarHidden) {
+        ac_bar.firstElementChild.innerHTML = content;
         ac_bar.firstElementChild.setAttribute('style', 'display:block;')
         ac_bar.style.gridTemplateColumns = '2fr 7fr';
+        ac_bar.firstElementChild.setAttribute('style','grid-template-rows: 1.5fr 10fr');
+        // ac_bar.firstElementChild.firstElementChild.setAttribute('style','grid-template-columns:2fr 7fr 2fr')
         isSideBarHidden = false;
     }
 })
@@ -60,7 +65,7 @@ inp_adder_1.addEventListener('keyup', (e) => {
             for (let i = 0; i < box_classlist_arr.length; i++) {
                 box.classList.add(`${box_classlist_arr[i]}`)
             }
-
+x   
             box.setAttribute('style','grid-template-columns:2fr 10fr;')
             box.innerHTML = `<img src="utilities/graphics/assets/sunny.png" alt="" width="24"> <span>${inp_adder_1.value} </span>`;
             ac_bar.firstElementChild.lastElementChild.appendChild(box);
