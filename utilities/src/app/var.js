@@ -1,0 +1,14 @@
+let mainMenuIcon = document.getElementById('titleBar').firstElementChild.firstElementChild;
+let activityBar = document.getElementById('activityBar');
+let type_chooser = document.getElementById('dialogWindow');
+let content = activityBar.firstElementChild.innerHTML;
+let isTypeChooserVisible = false;
+let contentofChooser = type_chooser.innerHTML;
+let etype = 0;
+let inp_adder_1 = document.getElementById('inp_adder_1');
+let box_classlist_arr = ['grid', 'grid-flow-col', 'items-center', 'px-4'];
+let wizard_icn = activityBar.firstElementChild.firstElementChild.firstElementChild;
+let sideMenu = document.getElementById('sideMenu');
+let contentOfSideMenu = sideMenu.innerHTML;
+let isSideMenuVisible = true;
+let titleBar = document.getElementById('titleBar');

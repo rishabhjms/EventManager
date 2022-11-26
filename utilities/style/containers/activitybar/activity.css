@@ -1,13 +1,11 @@
 #activityBar {
-  grid-template-columns: 2fr 7fr;
-  transition: 0.8s ease all;
+  grid-template-columns: 3fr 9fr;
 }
 #activityBar > div:first-child {
-  grid-template-rows: 1.5fr 10fr;
-  transition: 2s ease-in all;
+  grid-template-rows: 2fr 10fr;
 }
 #activityBar > div:first-child > div:first-child {
-  grid-template-columns: 2fr 7fr 2fr;
+  grid-template-columns: 2fr 7fr 2fr 2fr;
 }
 #activityBar > div:first-child > div:nth-child(2) {
   transition: 0.3s ease;
@@ -26,4 +24,11 @@
 }
 #activityBar > div:last-child > div:first-child {
   grid-template-columns: 1fr 8fr 2.5fr 2fr;
+}
+
+#sideBar {
+  transition: 0.3s ease all;
+}
+#sideBar > ul > li {
+  height: 3rem;
 }/*# sourceMappingURL=activity.css.map */

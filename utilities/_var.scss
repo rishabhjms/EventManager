@@ -1,8 +1,5 @@
-$russian-violet: #320e3bff;
-$spanish-violet: #4c2a85ff;
-$glaucous: #6b7fd7ff;
-$blizzard-blue: #bcedf6ff;
-$nyanza: #ddfbd2ff;
+$primary: #161B22;
+$alpha: #010409;
 @mixin setBG($bg-color) {
     background-color: $bg-color;
 }

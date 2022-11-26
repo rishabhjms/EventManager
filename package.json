@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Buri Buri Xaemon\" && exit 1"
   },
   "author": "Rishabh Jain",
   "license": "ISC",

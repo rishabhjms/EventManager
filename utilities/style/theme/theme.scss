@@ -1,29 +1,27 @@
 @import "../../var";
-
-.title_bar {
-    @include setBG($nyanza);
+#titleBar{
+    @include setBG($primary);
 }
-
-#activityBar {
-    &>div:first-child {
-        @include setBG($nyanza);
-
-        &>div:nth-child(2) {
-            @include setBG(#fff);
-
-            // &>ul>li{
-            // }
-        }
-        &>div:last-child>div {
-            @include setBG(#fff);
-        }
+#activityBar{
+    &>div:first-child{
+        @include setBG($primary);
     }
-
-    &>div:last-child>div:first-child>span {
-        border: 2px solid $russian-violet;
-    }
-
-    #inp_adder_2 {
-        @include setBG($nyanza);
-    }
+}
+body{
+    @include setBG($alpha);
+    color: white
+}
+input[type="text"]{
+    @include setBG($primary);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+#dialogWindow{
+    @include setBG($primary);
+    border-radius: 30px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    // background-color: rgba(17, 25, 40, 0.75);
+    background-color: rgba(22, 27, 34, 0.493);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
 }

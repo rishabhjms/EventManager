@@ -1,34 +1,38 @@
 #activityBar {
-    grid-template-columns: 2fr 7fr;
-    transition: .8s ease all;
+    grid-template-columns: 3fr 9fr;
 
     &>div:first-child {
-        grid-template-rows: 1.5fr 10fr;
-        transition: 2s ease-in all;
-        &>div:first-child{
-            grid-template-columns: 2fr 7fr 2fr;
+        //Side Menu 
+        grid-template-rows: 2fr 10fr;
+        border: 1px solid rgba(255, 255, 255, 0.125);
+
+        &>div:first-child {
+            //Side Menu Panel
+            grid-template-columns: 2fr 7fr 2fr 2fr;
         }
-        &>div:nth-child(2){
-            transition: .3s ease;
-            &>ul>li{
+            &>ul>li {
                 display: flex;
-                margin-left: 1rem/* 16px */;
-                margin-right: 1rem/* 16px */; 
+                margin-left: 1rem;                
+                margin-right: 1rem;                
                 cursor: pointer;
             }
         }
-        &>div:last-child{
-            grid-template-rows: repeat(13,1fr);
-            &>div{
-                
-            }
+
+        &>div:last-child {
+            grid-template-rows: repeat(13, 1fr);
         }
     }
-    
-    &>div:last-child{
+
+    &>div:last-child {
         grid-template-rows: 2fr 10fr;
-        &>div:first-child{
+
+        &>div:first-child {
             grid-template-columns: 1fr 8fr 2.5fr 2fr;
         }
+    }
+
+#sideBar {
+    &>ul>li {
+        height: 3rem;
     }
 }

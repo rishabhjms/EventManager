@@ -10,64 +10,69 @@
     <link rel="stylesheet" href="utilities/style/containers/titlebar/titlebar.css">
     <link rel="stylesheet" href="utilities/style/default/default.css">
     <link rel="stylesheet" href="utilities/style/containers/activitybar/activity.css">
+    <link rel="stylesheet" href="utilities/style/containers/window/window.css">
     <script src="https://kit.fontawesome.com/a62dfa2412.js" crossorigin="anonymous"></script>
-    <title>Event Manager - Elon</title>
+    <!-- <title>Event Manager - Elon</title> -->
 </head>
 
 <body>
-    <div id="titleBar" class="title_bar grid grid-flow-col">
-        <section class="grid place-content-center h-full">
-            <img src="utilities/graphics/assets/menu.png" alt="">
-        </section>
-        <section class="grid items-center">
-            <span class="font-semibold text-xl uppercase select-none cursor-text" id="eventHeading">Your heading goes
-                here</span>
-        </section>
-        <section class="grid place-content-center">
-            <!-- <img src="utilities/graphics/assets/add.png" alt=""> -->
-        </section>
-    </div>
-    <div id="activityBar" class="activity_bar grid">
-        <div class="activity_left grid">
-            <div class="row_up grid grid-flow-col items-center">
-                <span class="grid place-content-center py-2 rounded-lg"><img src="utilities//graphics/assets/wizard.png"
-                        alt="" width="24"></span>
-                <input type="text" placeholder="Enter day title" class="rounded-lg px-2 py-1 outline-none"
-                    id="inp_adder_1">
-                <span class="grid place-content-center"><img src="utilities/graphics/assets/tick.png" alt=""
-                        width="20"></span>
+    <container id="parent_container">
+        <div id="titleBar" class="title_bar grid grid-flow-col">
+            <section class="grid place-content-center h-full">
+                <i class="fa-solid fa-ellipsis-vertical text-2xl" title="Ctrl + B to toggle alternatively"></i>
+                <!-- <i class="fa-solid fa-ellipsis text-2xl hidden"></i> -->
+            </section>
+            <section class="grid items-center grid-cols-2">
+                <span class="font-semibold text-xl select-none cursor-text h-full flex items-center"
+                    id="eventHeading">The
+                    IVth Week</span>
+                <span class="font-normal h-full flex items-center text-md">Last Edited on --/--/--</span>
+            </section>
+        </div>
+
+        <div id="activityBar" class="activity_bar grid">
+            <div class="activity_left grid" style="border-right: 1px solid rgba(255, 255, 255, 0.125);">
+                <div class="row_up grid grid-flow-col items-center">
+                    <span class="grid place-content-center py-2 rounded-lg"><img
+                            src="utilities//graphics/assets/wizard.png" alt="" width="24" class="invert"></span>
+                    <input type="text" placeholder="Enter day title" class="rounded-lg px-2 py-1 outline-none"
+                        id="inp_adder_1">
+                    <span class="grid place-content-center"><img src="utilities/graphics/assets/tick.png" alt=""
+                            width="20" class="invert"></span>
+                    <span class="grid place-content-center">
+                        <img src="utilities/graphics/assets/dots.png" alt="" width="20" class="invert">
+                    </span>
+                </div>
+                <div class="absolute mt-16 left-12 invisible select-none cursor-pointer" id="sideMenu">
+                    <ul class="flex flex-col w-full h-auto justify-center px-3">
+                        <li class="space-x-3 h-0 flex items-center">
+                            <img src="utilities/graphics/assets/trash.png" alt="" width="25">
+                            <span>Delete all Entries</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row_down grid space-y-2 max-h-[70vh]">
+                </div>
             </div>
-            <div class="absolute mt-16 invisible" id="type_chooser">
-                <ul class="grid grid-rows-3 w-full items-center">
-                    <li class="space-x-3"> <img src="utilities/graphics/assets/sunny.png" alt="" width="24">
-                        <span>Day</span>
-                    </li>
-                    <li class="space-x-3">
-                        <img src="utilities/graphics/assets/calendar.png" alt="" width="24"><span>Event</span>
-                    </li>
-                    <li class="space-x-3">
-                        <img src="utilities/graphics/assets/reminder.png" alt="" width="24">
-                        <span>Reminder</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="row_down grid space-y-2 overflow-y-scroll max-h-[70vh]">
+            <div class="activity_right grid grid-flow-col">
+                <div class="row_up grid grid-flow-col items-center w-11/12">
+                    <span class="justify-self-center border-2 w-[1rem] rounded-full h-[1rem]"></span>
+                    <input type="text" id="inp_adder_2" placeholder="Add Task"
+                        class="rounded-lg px-2 py-2 outline-none w-11/12 justify-self-center" spellcheck="false">
+                    <input type="date">
+                    <input type="time">
+                </div>
+                <div class="row_down"></div>
             </div>
         </div>
-        <div class="activity_right grid grid-flow-col">
-            <div class="row_up grid grid-flow-col items-center w-11/12">
-                <span class="justify-self-center border-2 w-[1rem] rounded-full h-[1rem]"></span>
-                <input type="text" id="inp_adder_2" placeholder="Add Task"
-                    class="rounded-lg px-2 py-2 outline-none w-11/12 justify-self-center" spellcheck="false">
-                <input type="date">
-                <input type="time">
-            </div>
-            <div class="row_down"></div>
-        </div>
+    </container>
+    <div class="absolute" id="dialogWindow" style="display: none;">
+
     </div>
 </body>
 <script src="https://cdn.tailwindcss.com"></script>
+<script src="utilities/src/app/var.js"></script>
 <script src="utilities/src/app/title.js"></script>
-<script src="utilities/src/app/activity.js"></script>
+<script src="utilities/src/window.js"></script>
 
 </html>

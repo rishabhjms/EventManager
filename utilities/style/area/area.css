@@ -1,14 +1,17 @@
 .title_bar {
-  height: 15vh;
+  height: 12vh;
 }
 
 .activity_bar {
-  height: 85vh;
+  height: 88vh;
 }
-.activity_bar > div:first-child > div:nth-child(2) {
-  height: 20vh;
-  width: 20vw;
-}
-.activity_bar > div:first-child > div:nth-child(2) > ul {
-  height: 100%;
+
+#dialogWindow {
+  height: 80vh;
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 10%;
 }/*# sourceMappingURL=area.css.map */
