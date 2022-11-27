@@ -1,5 +1,6 @@
 @import "../../var";
 @import url('https://fonts.googleapis.com/css2?family=Rubik&family=Work+Sans&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -14,16 +15,5 @@
 
 body {
     overflow-x: hidden;
-}
-
-.rubik-font {
-    font-family: 'Rubik', sans-serif;
-}
-.work-font{
     font-family: 'Work Sans', sans-serif;
-}
-
-button {
-    transition: .3s ease-in all;
-    border-radius: 1.5rem;
 }

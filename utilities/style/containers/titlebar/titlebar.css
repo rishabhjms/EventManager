@@ -1,6 +1,7 @@
 #titleBar {
   grid-template-columns: 1fr 10fr;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.125);
 }
 #titleBar > section:last-child {
-  grid-template-columns: 6fr 1fr;
+  grid-template-columns: 6fr 1.5fr;
 }/*# sourceMappingURL=titlebar.css.map */

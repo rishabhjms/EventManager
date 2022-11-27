@@ -1,9 +1,13 @@
 setDocumentTitle = async (e_id) => {
     let x = await document.getElementById(e_id).innerText;
-    document.title = x;
-    return x;
+    let e_id_elem = await document.getElementById(e_id);
+    fTitle = `Sepal - ${x}`;
+    document.title = fTitle;
+    e_id_elem.innerHTML = fTitle;
+    return fTitle;
 }
-setDocumentTitle('eventHeading');
+let s = setDocumentTitle('eventHeading');
+// eventHeading
 toggleSideBarVisibility = async () => {
     if (!isSideMenuVisible) {
         activityBar.firstElementChild.innerHTML = content;

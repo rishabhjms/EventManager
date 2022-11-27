@@ -1,3 +1,61 @@
-#dialogWindow{
+#dialogWindow {
+    display: grid;
     transition: .4s ease;
+    grid-template-columns: 3fr 7fr;
+
+    &>div:first-child {
+        border-right: 1px solid rgba(255, 255, 255, 0.125);
+
+        &>span {
+            display: flex;
+            align-items: center;
+            padding: 0 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+            transition: .2s ease-in-out;
+            
+        }:hover {
+            background-color: rgba(255, 255, 255, 0.125);
+        }
+    }
+
+    &>div:last-child>section>ul {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+
+        &>li {
+            font-size: 1rem;
+            display: grid;
+            grid-auto-flow: column;
+            align-items: center;
+            grid-template-columns: 1fr 9fr;
+            cursor: pointer;
+            height: 100%;
+            user-select: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+            transition: .2s ease-in-out;
+            &:first-child{
+                border-top-right-radius: .5rem;
+            }
+            &>img {
+                justify-self: center;
+            }
+
+            &>span {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+        }
+
+        &>:hover {
+            background-color: rgba(255, 255, 255, 0.125);
+        }
+
+    }
+}
+
+.active {
+    border-left: 5px solid rgb(25, 84, 151);
 }

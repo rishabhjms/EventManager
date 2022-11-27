@@ -26,7 +26,7 @@
                 <span class="font-semibold text-xl select-none cursor-text h-full flex items-center"
                     id="eventHeading">The
                     IVth Week</span>
-                <span class="font-normal h-full flex items-center text-md">Last Edited on --/--/--</span>
+                <span class="font-normal h-full flex items-center text-md" id="date">Last Visited on --/--/--</span>
             </section>
         </div>
 
@@ -34,7 +34,8 @@
             <div class="activity_left grid" style="border-right: 1px solid rgba(255, 255, 255, 0.125);">
                 <div class="row_up grid grid-flow-col items-center">
                     <span class="grid place-content-center py-2 rounded-lg"><img
-                            src="utilities//graphics/assets/wizard.png" alt="" width="24" class="invert"></span>
+                            src="utilities//graphics/assets/wizard.png" alt="" width="24" class="invert"
+                            title="See the Options for side menu"></span>
                     <input type="text" placeholder="Enter day title" class="rounded-lg px-2 py-1 outline-none"
                         id="inp_adder_1">
                     <span class="grid place-content-center"><img src="utilities/graphics/assets/tick.png" alt=""
@@ -66,13 +67,33 @@
             </div>
         </div>
     </container>
-    <div class="absolute" id="dialogWindow" style="display: none;">
-
+    <div class="absolute grid grid-flow-col rounded-lg" id="dialogWindow" style="display: none;">
+        <div class="box_left w-full rounded-tl-lg rounded-bl-lg grid" style="grid-template-rows:repeat(8,1fr);">
+            <span class="rounded-tl-lg cursor-pointer">GENERAL</span>
+            <span class="cursor-pointer">SIDEBAR</span>
+            <span class="cursor-pointer">EVENT CHOOSER</span>
+            <span class="cursor-pointer">EXPORT</span>
+        </div>
+        <div class="box_right w-full rounded-tr-lg rounded-br-lg">
+            <section class="tab_content_1 hidden"></section>
+            <section class="tab_content_2 h-full">
+                <ul>
+                    <li class="cursor-pointer">
+                        <img src="utilities/graphics/assets/trash.png" alt="" width="40" class="justify-self-center">
+                       <span class="px-4 cursor-pointer"> Delete All Entries </span>
+                    </li>
+                </ul>
+            </section>
+            <section class="tab_content_3 hidden"></section>
+            <section class="tab_content_4 hidden"></section>
+        </div>
     </div>
 </body>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="utilities/src/app/var.js"></script>
 <script src="utilities/src/app/title.js"></script>
 <script src="utilities/src/window.js"></script>
+<script src="utilities/src/app/sidemenu.js"></script>
+<script src="utilities/src/onload.js"></script>
 
 </html>

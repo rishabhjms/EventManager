@@ -1,3 +1,56 @@
 #dialogWindow {
+  display: grid;
   transition: 0.4s ease;
+  grid-template-columns: 3fr 7fr;
+}
+#dialogWindow > div:first-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.125);
+}
+#dialogWindow > div:first-child > span {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+  transition: 0.2s ease-in-out;
+}
+#dialogWindow > div:first-child :hover {
+  background-color: rgba(255, 255, 255, 0.125);
+}
+#dialogWindow > div:last-child > section > ul {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+}
+#dialogWindow > div:last-child > section > ul > li {
+  font-size: 1rem;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  grid-template-columns: 1fr 9fr;
+  cursor: pointer;
+  height: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+  transition: 0.2s ease-in-out;
+}
+#dialogWindow > div:last-child > section > ul > li:first-child {
+  border-top-right-radius: 0.5rem;
+}
+#dialogWindow > div:last-child > section > ul > li > img {
+  justify-self: center;
+}
+#dialogWindow > div:last-child > section > ul > li > span {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+#dialogWindow > div:last-child > section > ul > :hover {
+  background-color: rgba(255, 255, 255, 0.125);
+}
+
+.active {
+  border-left: 5px solid rgb(25, 84, 151);
 }/*# sourceMappingURL=window.css.map */

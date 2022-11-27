@@ -12,17 +12,5 @@
 
 body {
   overflow-x: hidden;
-}
-
-.rubik-font {
-  font-family: "Rubik", sans-serif;
-}
-
-.work-font {
   font-family: "Work Sans", sans-serif;
-}
-
-button {
-  transition: 0.3s ease-in all;
-  border-radius: 1.5rem;
 }/*# sourceMappingURL=default.css.map */
